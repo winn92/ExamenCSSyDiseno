@@ -1,0 +1,260 @@
+html{
+    font-family: 'Dancing Script', cursive;
+    background-color: #000;
+
+    -webkit-animation-name: aparecer;
+    animation-name: aparecer;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+body{
+    border-radius: 10px 10px 0 0;
+    background-color: #D5C75F;
+}
+
+@keyframes aparecer {
+    0%   { margin-top: 150%}
+    60% { margin-top: 5%}
+    100% { margin-top: 0}
+}
+
+#paisaje{
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#paisaje:hover{
+    -webkit-transform:scale(1.2);
+    transform:rotate(10deg);
+}
+
+
+#paisaje1 {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+#paisaje2,#paisaje4,#paisaje6 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#paisaje3 {
+    -webkit-filter: sepia(90%);
+    filter:sepia(90%);
+}
+
+#retrato{
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#retrato:hover{
+    transform: translate(20px,0);
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+span{
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px #02010A;
+}
+
+.central img,.img_sec img{
+    box-shadow: 2px 2px #02010a;
+}
+
+header{
+    height: 3em;
+    border-radius: 10px 10px 0 0;
+    padding: 1em;
+    background-color: #5b7989;
+}
+
+ul.menu {
+    font-size: large;
+    font-weight: bold;
+    clear: both;
+    float: right;
+    list-style: none;
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    padding: .3em;
+    display: block;
+    text-decoration: underline;
+    color: white;
+    padding-bottom: 1em;
+}
+
+ul.menu li a.active {
+    text-decoration: none;
+}
+
+.central{
+    background-color: #82c3a6;
+    padding-right: 4em;
+    padding-left: 4em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    display: block;
+    margin: 0 auto;
+}
+
+.sec{
+    background-color: #D5C75F;
+    height: auto;
+}
+
+.second{
+    clear: both;
+    background-color: #D5C75F;
+    height: auto;
+}
+
+.cont{
+    width: 50%;
+    float: left;
+}
+
+.contenedor{
+    width: 33.33%;
+    float: left;
+}
+
+.img_sec{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #D5C75F;
+}
+
+.img_second{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #D5C75F;
+}
+
+.img_sec p{
+    text-align: center;
+    font-size: large;
+}
+
+.img_sec p a{
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.row{
+    height:42vh;
+    clear: both;
+    width: 100%;
+    background-color: #C6d5c5;
+    border-radius: 10px;
+}
+.content{
+    height: auto;
+    background-color: #C6d5c5;
+    width: 25%;
+    float: left;
+    font-weight: bold;
+}
+
+.column{
+    padding: 1em;
+    text-align: left;
+    background-color: #C6d5c5;
+
+}
+
+.column span{
+    color: black;
+    text-shadow: none;
+}
+
+@media screen and (max-width: 900px){
+    .contCen{
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        background-color: #82c3a6;
+    }
+
+    .central{
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+
+    span{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header ul{
+        margin: 0 auto;
+        width: 100%;
+    }
+    header{
+        height: 4.5em;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .cont{
+        width: 100%;
+        float: none;
+    }
+
+    .contenedor{
+        width: 100%;
+        float: none;
+    }
+
+    .img_sec{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: #D5C75F;
+    }
+
+    .img_second{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: #D5C75F;
+    }
+
+    .content{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    img{
+        width: 100%;
+        height: auto;
+
+    }
+}
