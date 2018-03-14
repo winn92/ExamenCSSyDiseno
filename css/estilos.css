@@ -203,14 +203,19 @@ ul.menu li a.active {
     }
 
     span{
+        display: block;
         text-align: center;
         margin: 0 auto;
     }
 
-    header ul{
-        margin: 0 auto;
-        width: 100%;
+    
+    ul.menu {
+        padding-left: 30%;
+        float: left;
+        text-align: center;
     }
+
+
     header{
         height: 4.5em;
     }
@@ -252,9 +257,9 @@ ul.menu li a.active {
 }
 
 @media screen and (min-width: 900px){
+    
     img{
         width: 100%;
         height: auto;
-
     }
 }
